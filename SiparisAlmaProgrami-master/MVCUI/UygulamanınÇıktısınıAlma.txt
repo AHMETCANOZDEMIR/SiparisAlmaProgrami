@@ -1,0 +1,20 @@
+﻿MVCUI projesine sağ tıklayıp açılan menüden Publish seçeneğini seçiyoruz
+* Açılan pencerede Add a publish profile linkine tıklıyoruz
+* Açılan pencerede target yani hedef olarak nereye çıktı alınacağını ayarlamamız gerekiyor
+* Burada Folder seçeneğini seçerek bilgisayardaki bir klasöre çıktı alacağımızı belirtelim
+* Folder ı seç ve Next e bas burada istersek browse kısmından farklı bir klasör seçip oraya çıktı alabiliriz
+* Farklı konum seçmezsek sistem otomatik olarak projemizin içindeki bin klasörünün içine açacağı klasöre çıktı alır
+* Finish diyerek seçimi tamamlayalım
+* Bundan sonra bu ayarları tekrar yapmamıza gerek yok
+* Çıktıyı almak için sağ üst köşedeki Publish butonuna basıyoruz ve visual studio uygulama çıktısını oluşturuyor
+* İşlem başarılı olduysa Mvc projesi içindeki bin klasörü içinde app.publish klasörü oluşturulur ve uygulama çıktısı buraya yüklenir
+* Uygulama çıktısını görmek için visual studio da Mvcuı(yani projemiz neyse o) a sağ tıklayop open folder in file explorer diyerek klasörde açabilir ve oradan bin klasörünün içinde app.publish klasörüne girip çıktımızı görebiliriz
+* Artık bu çıktı dosyalarını satın aldığımız hostinge yüklersek uygulamamız sunucuda çalışacaktır.
+
+Dikkat!! Uygulamayı sunucuya yükleyeceksek Publish etmeden önce veritabanı ayarlarını hosting firmasından alacağımız gerçek bilgilerle değiştirmemiz gerekir yoksa localdb diye çıktı alınacağı için uygulama sunucuda çalışmaz hata verir
+
+* Uygulama çıktısını sunucuya yüklemek için genellikle Ftp programları kullanılır bunlardan en çok kulanılanlardan biri FileZilla programıdır
+
+* Filezilla programını google dan aratıp sitesine girip oradaki 2 seçenekten client yani normal kullanıcılar için olanı seçip bilgisayarımıza indirip kurabiliriz
+
+* Hosting firmamızın vereceği server a bağlantı bilgilerini FileZilla programına girip sunucumuza bağlanıp Publish ettiğimiz dosyaları sürükle bırak yöntemiyle kendi bilgisayarımızdan sunucuya yükleyebiliriz

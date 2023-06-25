@@ -1,0 +1,32 @@
+﻿@model Entities.Product
+
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-5">
+            <img src="~/Images/@Model.Image" alt="@Model.Name" title="@Model.Name" class="img-thumbnail" />
+        </div>
+        <div class="col-md-7">
+            <h1>@Model.Name</h1>
+            <div>
+                Stok : @Model.Stock
+            </div>
+            <div>
+                Fiyat : @Model.Price TL
+            </div>
+            <h4>
+                Ürün Açıklaması
+            </h4>
+            <div>
+                @Model.Description
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

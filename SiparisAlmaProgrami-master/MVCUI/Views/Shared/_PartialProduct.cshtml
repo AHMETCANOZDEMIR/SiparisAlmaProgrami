@@ -1,0 +1,14 @@
+﻿@model Entities.Product
+
+<div class="col">
+    <div class="card shadow-sm">
+        <a href="/Products/Detail/@Model.Id">
+            <img src="~/Images/@Model.Image" class="bd-placeholder-img card-img-top" width="100%" />
+            <div class="card-body">
+                <p class="card-text">
+                    @Model.Name Fiyat : @Model.Price TL
+                </p>
+            </div>
+        </a>
+    </div>
+</div>

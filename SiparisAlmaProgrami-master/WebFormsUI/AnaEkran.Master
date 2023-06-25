@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaEkran.master.cs" Inherits="WebFormsUI.AnaEkran" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Stil.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <header>
+            <ul id="menu">
+                <li><a href="./CategoryManagement.aspx">Kategori Yönetimi</a></li>
+                <li><a href="./CustomerManagement.aspx">Müşteri Yönetimi</a></li>
+                <li><a href="./AddressManagement.aspx">Adres Yönetimi</a></li>
+                <li><a href="./ProductManagement.aspx">Ürün Yönetimi</a></li>
+                <li><a href="./UserManagement.aspx">Kullanıcı Yönetimi</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <asp:Label ID="lblKullanici" runat="server"></asp:Label>
+                </li>
+                <li>
+                    <asp:Button ID="btnCikis" runat="server" Text="Çıkış" BackColor="Red" ForeColor="White" OnClick="btnCikis_Click" ValidationGroup="cikis" />
+                </li>
+            </ul>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

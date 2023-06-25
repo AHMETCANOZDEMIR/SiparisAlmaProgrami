@@ -1,0 +1,25 @@
+﻿@model MVCUI.Models.HomePageViewModel
+
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+@Html.Partial("_PartialSlider", Model.Sliders)
+
+<div class="jumbotron text-center">
+    <h1>Ürünlerimiz</h1>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            @foreach (var item in Model.Products)
+            {
+                @Html.Partial("_PartialProduct", item)
+            }
+
+        </div>
+    </div>
+</div>
